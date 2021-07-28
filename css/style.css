@@ -1,0 +1,55 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1{
+    font-family: "Arial Black", cursive;
+}
+
+.navbar {
+    padding: 5px;
+    background-color: #B94629;
+    color: white;
+    margin: 0;
+}
+
+.full-screen{
+    height: calc(100vh - 67px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-header{
+    background-color: #B94629;
+}
+
+.card{
+    margin-top: 20px;
+}
+
+.carousel-inner .carousel-item > img {
+    -webkit-animation: thing 20s;
+    -o-animation: thing 20s;
+    animation: thing 20s; 
+  }
+  @keyframes thing {
+    from {
+       transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+  }
+
+#button {
+    margin-top: 20px;
+}
+
