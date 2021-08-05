@@ -3,10 +3,13 @@ body {
 }
 
 h1{
-    font-family: "Arial Black", cursive;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.navbar {
+.navbar, .site-footer {
     padding: 5px;
     background-color: #B94629;
     color: white;
@@ -62,10 +65,6 @@ h1{
     margin-right: 20px;
 }
 
-#cardBorder .list-group-item{
-    border: none;
-}
-
   
   /* Position the image container (needed to position the left and right arrows) */
   .container {
@@ -87,7 +86,7 @@ h1{
   .next {
     cursor: pointer;
     position:absolute;
-    top: 50%;
+    top: 55%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -97,6 +96,7 @@ h1{
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    margin-right: 15px;
   }
   
   /* Position the "next button" to the right */
@@ -119,14 +119,7 @@ h1{
     position: absolute;
     top: 0;
   }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
+
   
   .row:after {
     content: "";
@@ -135,10 +128,7 @@ h1{
   }
   
   /* Six columns side by side */
-  .column {
-    float:left;
-    width: 20%;
-  }
+  
   
   /* Add a transparency effect for thumnbail images */
   .demo {
@@ -149,3 +139,22 @@ h1{
   .demo:hover {
     opacity: 1;
   }
+
+.list-group-item{
+  border: none;
+  align-items: center;
+}
+
+h2{
+  font-family: "Trirong", serif;
+  font-weight: bold;
+}
+
+h3{
+    font-family: "Trirong", serif;
+    font-weight: bold;
+}
+
+.card-deck{
+  padding-bottom: 50px;
+}
