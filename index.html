@@ -89,6 +89,11 @@
                                         <option value="forSale">For Sale</option>
                                         <option value="preSelling">Pre Selling</option>
                                     </select>
+                                    <div class="form-group center">
+                                        <label for="propPrice" class="col-form-label">Property Price</label>                                  
+                                        <input type="range" class="form-control-range" name="propPrice" id="propPrice" min="10000" max="20000000" step="10000" value="10000000"/>
+                                        <h7 class="col-md-4">P10000 - P<span id="price"></span></h7>
+                                    </div>
                                 </div>
                                 <div class="col-md-4 mx-auto">
                                     <select name="typeFilter" id="typeFilter" class="form-control">
@@ -96,6 +101,11 @@
                                         <option value="house">House</option>
                                         <option value="condo">Condo</option>
                                     </select>
+                                    <div class="form-group center">
+                                        <label for="propType" class="col-form-label">Bedrooms</label>
+                                        <input type="range" class="form-control-range" name="bedroom" id="propType" min="1" max="5"/>
+                                        <h7 class="col-md-4">1 bedroom - <span id="type"></span> bedrooms</h7>
+                                    </div>
                                 </div>
                                 <div class="col-md-4 mx-auto">
                                     <select name="locFilter" id="locFilter" class="form-control">
@@ -103,25 +113,15 @@
                                         <option value="qc">Quezon City</option>
                                         <option value="antipolo">Mandaluyong City</option>
                                     </select>
+                                    <div class="form-group center">
+                                        <label for="propArea" class="col-form-label">Square Meter (Area)</label>
+                                        <input type="range" class="form-control-range" name="area" id="propArea" min="20" max="500" value="250" step="10"/>
+                                        <h7 class="col-md-4">20 sqm - <span id="area"></span> sqm</h7>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row" style="text-align:center">
-                                    <label for="propPrice" class="col-md-4 mx-auto col-form-label">Property Price</label>
-                                    <label for="bedroom" class="col-md-4 mx-auto col-form-label">Bedrooms</label>
-                                    <label class="col-md-4 mx-auto col-form-label">Square Meter (Area)</label>
-                            </div>
-                            <div class="row">
-                                <input class="col-md-2 mx-auto" type="range" name="propPrice" id="propPrice" min="10000" max="20000000"/>
-                                <input class="col-md-2 mx-auto" type="range" name="bedroom" id="bedroom" min="1" max="5"/>
-                                <input class="col-md-2 mx-auto" type="range" name="area" id="area" min="20" max="500"/>
-                            </div>
-                            <div class="row" style="text-align:center">
-                                <h7 class="col-md-4">P10,000 - P20,000,000</h7>
-                                <h7 class="col-md-4">1 bedroom - 5 bedrooms</h7>
-                                <h7 class="col-md-4">20 sqm - 500 sqm</h7>
-                            </div>
-                            <div class="row-form text-right" id="button">
-                                <button type="submit" class="btn btn-primary btn-md ml-auto">Search</button>
+                            <div style="text-align: center;">
+                                <button type="submit" class="btn btn-primary align-middle">Search</button>
                             </div>
                         </form>
                     </div>
@@ -172,6 +172,7 @@
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/infina.js"></script>
+<script src="js/slider.js"></script>
 
 </body>
 </html>
